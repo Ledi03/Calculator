@@ -13,6 +13,7 @@ int main() {
     printf("4. Division\n");
     printf("5. Square Root\n");
     printf("6. Power\n");
+    printf("7. Average\n");
     scanf("%d", &choice);
 
     switch (choice) {
@@ -62,6 +63,13 @@ int main() {
             break;
         default:
             printf("Error: invalid operation\n");
+            break;
+       case 7:
+            printf("Enter two numbers to find the average of:\n");
+            scanf("%f %f", &num1, &num2);
+                result = (num1+num2)/2;
+                printf("Result: %.2f\n", result);
+            }
             break;
     }
 
